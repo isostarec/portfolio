@@ -1,0 +1,236 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+  <script src="js/typed.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web|Lora" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+
+
+  <script>
+  $(function(){
+    $(".firsttext").typed({
+      strings: ["Hello.^1000", "I'm" +" <s5>Ivan</s5>." +"^250", "I'm a <s5>web dev</s5>."],
+      typeSpeed: 3,
+      showCursor: true,
+      cursorChar:"|"
+    });
+  });
+  </script>
+
+  <script>
+  
+    $(document).ready(function(){
+    $('html,body').animate({
+        scrollTop: $("#typing").offset().top},
+        'slow');
+    $('#profile-img').fadeIn('3000');
+
+    $('a[href^="#"]').click(function(e) {
+    $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 1000);
+    return false;
+    e.preventDefault();
+});
+
+      });
+
+  </script>
+
+  <script type="text/javascript">
+    function Goto(link){
+      return window.open(link, '_blank');
+    }
+    function mailSend(email){
+      return window.open('mailto:' + email);
+    }
+  </script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-faded">
+    <div style="margin-left: 0px; margin-right: 0px; width: 100%;" class="container">
+      <a class="navbar-brand" href="#typing">
+        <img src="pictures/profile.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <br> </a>
+      <a class="navbar-brand" href="#typing">[<s5>i</s5>Sostarec]</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" onclick="Goto('https://isostarec.github.io');" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me<span class="sr-only">(current)</span></a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-primary text-center d-flex h-100 align-items-center" id="typing">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="pictures/profile.jpg" class="rounded-circle img-fluid mx-auto d-block" id="profile-img"> </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="display-1 text-white firsttext"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 section text-center" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">About me</h1>
+          <p class="lead">I like to make things that work and that other people use and like. My developer 'way of life' started a long time ago when I was still into computer games, trying to hack my way through making websites and servers, when I first discovered a
+            passion for computers and making things in the digital world. From then on I got into linux, shell, web design, and now I aspire to become a professional application developer/project manager and much more! Below are some technologies I am familiar with (some of many more).
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-2"><i class="devicon devicon-html5-plain-wordmark colored"></i></div>
+            <div class="col-md-2"><i class="devicon devicon-css3-plain-wordmark colored"></i></div>
+            <div class="col-md-2"><i class="devicon devicon-javascript-plain colored"></i></div>
+            <div class="col-md-2"><i class="devicon devicon-github-plain-wordmark colored"></i></div>
+            <div class="col-md-2"><i class="devicon devicon-jquery-plain-wordmark colored"></i></div>
+            <div class="col-md-2"><i class="devicon devicon-bootstrap-plain-wordmark colored"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="py-5 section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">Take a look at my past projects</h1>
+        </div>
+      </div>
+      <div class="row text-left p-4">
+        <div class="col-md-6">
+          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg"> </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="">Heading</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-inline">Lorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus
+                iaculis Nulla volutpat</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div
+  <div class="py-5">
+    <div class="container">
+      <div class="row text-left p-4">
+        <div class="col-md-6">
+          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg"> </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="">Heading</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-inline">Lorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus
+                iaculis Nulla volutpat</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row text-left p-4">
+        <div class="col-md-6">
+          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg"> </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="">Heading</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-inline">Lorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus
+                iaculis Nulla volutpat</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row text-left p-4">
+        <div class="col-md-6">
+          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg"> </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="">Heading</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-inline">Lorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus iaculis Nulla volutpatLorem ipsum Phasellus
+                iaculis Nulla volutpat</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <div class="py-5 section text-center bg-inverse" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">Contact me</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="row">
+            <div class="col-3"><i onclick="Goto('https://twitter.com/sostarecivan');" class="footer-icons devicon-twitter-plain anod"></i></div>
+            <div class="col-3"><i onclick="Goto('https://github.com/isostarec');" class="footer-icons devicon-github-plain anod"></i></div>
+            <div class="col-3"><i onclick="mailSend('sostarecivan@outlook.com');" style="font-size: 4em" class="footer-icons fa fa-envelope-open-o anod"></i></div>
+            <div class="col-3"><i onclick="Goto('https://www.facebook.com/ivan.sostarec.98');" class="footer-icons devicon-facebook-plain anod"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
